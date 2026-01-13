@@ -1,113 +1,38 @@
-/* Design System Variables */
-:root {
-  /* Colors - Primary */
-  --coral: #FF6B6B;
-  --coral-hover: #FF5252;
-  --orange: #FF8A4C;
-  
-  /* Colors - Neutral */
-  --dark-navy: #0A192F;
-  --darker-navy: #020c1b;
-  --slate: #1E293B;
-  --slate-light: #334155;
-  --gray: #64748B;
-  --light-gray: #94A3B8;
-  
-  /* Colors - Text */
-  --text-primary: #FFFFFF;
-  --text-secondary: #94A3B8;
-  --text-muted: #64748B;
-  
-  /* Colors - Accent */
-  --code: #E5E7EB;
-  --code-background: #1E293B;
-  
-  /* Typography */
-  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-fallback: 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  --font-code: 'Consolas', 'Monaco', 'Courier New', monospace;
-  
-  /* Spacing */
-  --spacing-xs: 0.25rem;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-2xl: 3rem;
-  --spacing-3xl: 4rem;
-  --spacing-4xl: 6rem;
-  --spacing-5xl: 8rem;
-  
-  /* Layout */
-  --max-width: 1400px;
-  --section-padding-vertical: var(--spacing-4xl);
-  --section-padding-horizontal: var(--spacing-2xl);
-  
-  /* Transitions */
-  --transition: all 0.2s ease;
-  --transition-slow: all 0.3s ease-in-out;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  body {
+    @apply bg-navy-dark text-text-primary font-primary;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
 
-body {
-  font-family: var(--font-primary), var(--font-fallback);
-  background-color: var(--dark-navy);
-  color: var(--text-primary);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-}
-
-code {
-  font-family: var(--font-code);
-}
-
-/* Utility Classes */
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 var(--section-padding-horizontal);
-}
-
-.section {
-  padding: var(--section-padding-vertical) var(--section-padding-horizontal);
-}
-
-/* Responsive Breakpoints */
-@media (max-width: 1280px) {
-  :root {
-    --section-padding-vertical: var(--spacing-3xl);
-    --section-padding-horizontal: var(--spacing-xl);
+  code {
+    @apply font-code;
   }
 }
 
-@media (max-width: 1024px) {
-  :root {
-    --section-padding-vertical: var(--spacing-2xl);
-    --section-padding-horizontal: var(--spacing-lg);
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    width: 10px;
   }
-}
 
-@media (max-width: 768px) {
-  :root {
-    --section-padding-vertical: var(--spacing-xl);
-    --section-padding-horizontal: var(--spacing-md);
+  .scrollbar-hide::-webkit-scrollbar-track {
+    @apply bg-navy-dark;
   }
-}
 
-@media (max-width: 640px) {
-  :root {
-    --section-padding-vertical: var(--spacing-lg);
-    --section-padding-horizontal: var(--spacing-md);
+  .scrollbar-hide::-webkit-scrollbar-thumb {
+    @apply bg-slate-light rounded-[5px];
+  }
+
+  .scrollbar-hide::-webkit-scrollbar-thumb:hover {
+    @apply bg-coral;
   }
 }

@@ -1,6 +1,6 @@
 # Developer Portfolio Website
 
-A modern, dark-themed single-page portfolio website built with React, following a comprehensive design system.
+A modern, dark-themed single-page portfolio website built with React and Tailwind CSS, following a comprehensive design system.
 
 ## Features
 
@@ -63,7 +63,7 @@ Update the following files to customize with your information:
 
 ### Colors
 
-All colors are defined as CSS variables in `src/index.css`. Modify the `:root` variables to change the color scheme.
+All colors are defined in the Tailwind configuration file (`tailwind.config.js`). Modify the `theme.extend.colors` section to change the color scheme.
 
 ### Images
 
@@ -78,20 +78,16 @@ profile-page/
 ├── src/
 │   ├── components/
 │   │   ├── Navigation.js
-│   │   ├── Navigation.css
 │   │   ├── Hero.js
-│   │   ├── Hero.css
 │   │   ├── About.js
-│   │   ├── About.css
 │   │   ├── Projects.js
-│   │   ├── Projects.css
-│   │   ├── Contact.js
-│   │   ├── Contact.css
-│   │   └── Button.css
+│   │   └── Contact.js
 │   ├── App.js
 │   ├── App.css
 │   ├── index.js
 │   └── index.css
+├── tailwind.config.js
+├── postcss.config.js
 ├── design.json
 └── package.json
 ```
@@ -99,7 +95,7 @@ profile-page/
 ## Technologies Used
 
 - React 18.2.0
-- CSS3 with CSS Variables
+- Tailwind CSS 3.3.6
 - Inter Font Family (Google Fonts)
 
 ## Browser Support

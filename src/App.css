@@ -14,14 +14,13 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--dark-navy);
+  @apply bg-navy-dark;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--slate-light);
-  border-radius: 5px;
+  @apply bg-slate-light rounded-[5px];
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--coral);
+  @apply bg-coral;
 }
