@@ -1,0 +1,331 @@
+{
+    "designSystem": {
+      "overview": {
+        "style": "Modern dark-themed developer portfolio with a sophisticated, tech-forward aesthetic",
+        "personality": "Professional yet approachable, bold but refined",
+        "targetAudience": "Potential clients, employers, collaborators in tech industry"
+      },
+      
+      "colorPalette": {
+        "primary": {
+          "coral": "#FF6B6B",
+          "coralHover": "#FF5252",
+          "usage": "Primary CTAs, accent elements, active states"
+        },
+        "secondary": {
+          "orange": "#FF8A4C",
+          "usage": "Secondary accents, gradient overlays"
+        },
+        "neutral": {
+          "darkNavy": "#0A192F",
+          "darkerNavy": "#020c1b",
+          "slate": "#1E293B",
+          "slateLight": "#334155",
+          "gray": "#64748B",
+          "lightGray": "#94A3B8",
+          "usage": "Backgrounds, cards, borders, secondary text"
+        },
+        "text": {
+          "primary": "#FFFFFF",
+          "secondary": "#94A3B8",
+          "muted": "#64748B",
+          "usage": "Hierarchy through opacity and color variation"
+        },
+        "accent": {
+          "code": "#E5E7EB",
+          "codeBackground": "#1E293B",
+          "usage": "Code snippets, technical content"
+        }
+      },
+      
+      "typography": {
+        "fontFamilies": {
+          "primary": "Inter, system-ui, -apple-system, sans-serif",
+          "fallback": "Segoe UI, Roboto, Helvetica Neue, Arial",
+          "code": "Consolas, Monaco, 'Courier New', monospace"
+        },
+        "scale": {
+          "hero": {
+            "size": "4rem to 6rem",
+            "weight": "700",
+            "lineHeight": "1.1",
+            "usage": "Main hero headings"
+          },
+          "h1": {
+            "size": "3rem to 4rem",
+            "weight": "700",
+            "lineHeight": "1.2",
+            "usage": "Section titles"
+          },
+          "h2": {
+            "size": "2rem to 2.5rem",
+            "weight": "600",
+            "lineHeight": "1.3",
+            "usage": "Subsection headings"
+          },
+          "h3": {
+            "size": "1.5rem to 1.75rem",
+            "weight": "600",
+            "lineHeight": "1.4",
+            "usage": "Card titles, project names"
+          },
+          "body": {
+            "size": "1rem to 1.125rem",
+            "weight": "400",
+            "lineHeight": "1.6",
+            "usage": "Body text, descriptions"
+          },
+          "small": {
+            "size": "0.875rem",
+            "weight": "400",
+            "lineHeight": "1.5",
+            "usage": "Labels, tags, metadata"
+          }
+        },
+        "principles": {
+          "contrast": "High contrast between headings and body text through size and weight",
+          "hierarchy": "Clear visual hierarchy with distinct size jumps",
+          "readability": "Generous line height for comfortable reading"
+        }
+      },
+      
+      "spacing": {
+        "scale": {
+          "xs": "0.25rem (4px)",
+          "sm": "0.5rem (8px)",
+          "md": "1rem (16px)",
+          "lg": "1.5rem (24px)",
+          "xl": "2rem (32px)",
+          "2xl": "3rem (48px)",
+          "3xl": "4rem (64px)",
+          "4xl": "6rem (96px)",
+          "5xl": "8rem (128px)"
+        },
+        "sections": {
+          "verticalPadding": "4xl to 5xl",
+          "horizontalPadding": "lg to 2xl",
+          "usage": "Major content sections with generous breathing room"
+        },
+        "components": {
+          "cardPadding": "xl to 2xl",
+          "buttonPadding": "md lg (vertical horizontal)",
+          "gap": "lg to xl between related elements"
+        },
+        "principles": {
+          "generous": "Liberal use of whitespace for modern, uncluttered feel",
+          "consistent": "Rhythm created through consistent spacing multiples",
+          "responsive": "Spacing scales down on smaller viewports"
+        }
+      },
+      
+      "layout": {
+        "structure": {
+          "maxWidth": "1200px to 1400px",
+          "gridColumns": "12-column responsive grid",
+          "contentWidth": "Constrained center column with breathing room"
+        },
+        "sections": {
+          "hero": {
+            "layout": "Two-column split (text left, image right)",
+            "proportion": "60/40 or 50/50",
+            "height": "Full viewport or near-full"
+          },
+          "about": {
+            "layout": "Text content with stats cards below",
+            "alignment": "Center-aligned or left-aligned prose"
+          },
+          "projects": {
+            "layout": "Alternating layout or grid",
+            "cards": "Image/code preview with text description",
+            "arrangement": "Staggered or consistent grid"
+          },
+          "contact": {
+            "layout": "Split form and heading or single column",
+            "alignment": "Centered or left-aligned"
+          }
+        },
+        "principles": {
+          "balance": "Asymmetric layouts balanced with visual weight",
+          "flow": "Natural eye movement from top to bottom",
+          "focus": "Clear focal points in each section"
+        }
+      },
+      
+      "components": {
+        "buttons": {
+          "primary": {
+            "background": "coral gradient",
+            "text": "white",
+            "padding": "0.75rem 1.5rem",
+            "borderRadius": "0.25rem to 0.375rem",
+            "fontWeight": "500 to 600",
+            "hover": "Slight scale (1.02) or brightness increase",
+            "transition": "all 0.2s ease"
+          },
+          "secondary": {
+            "background": "transparent",
+            "border": "2px solid white or coral",
+            "text": "white",
+            "padding": "0.75rem 1.5rem",
+            "borderRadius": "0.25rem to 0.375rem",
+            "hover": "Background fills with subtle color"
+          },
+          "ghost": {
+            "background": "transparent",
+            "text": "white or coral",
+            "padding": "0.5rem 1rem",
+            "hover": "Underline or subtle background"
+          }
+        },
+        
+        "cards": {
+          "project": {
+            "background": "Darker navy with subtle gradient or solid",
+            "border": "1px solid slateLight with low opacity",
+            "borderRadius": "0.5rem to 0.75rem",
+            "padding": "xl to 2xl",
+            "shadow": "Subtle glow effect or none",
+            "hover": "Lift effect (translateY -4px) with increased shadow"
+          },
+          "stat": {
+            "background": "Transparent or subtle slate",
+            "border": "Optional thin border",
+            "padding": "lg to xl",
+            "number": "Large, bold, coral accent",
+            "label": "Small, muted text below"
+          }
+        },
+        
+        "navigation": {
+          "position": "Fixed top or absolute",
+          "background": "Transparent or dark with blur backdrop",
+          "height": "4rem to 5rem",
+          "links": {
+            "spacing": "lg to xl between items",
+            "fontSize": "0.875rem to 1rem",
+            "weight": "500",
+            "color": "White with opacity, full white on hover",
+            "hover": "Underline or coral accent"
+          }
+        },
+        
+        "tags": {
+          "background": "Transparent or very dark slate",
+          "border": "1px solid gray with low opacity",
+          "borderRadius": "0.25rem",
+          "padding": "0.25rem 0.75rem",
+          "fontSize": "0.75rem to 0.875rem",
+          "textTransform": "uppercase optional"
+        },
+        
+        "inputs": {
+          "background": "Transparent or very dark",
+          "border": "1px solid slateLight",
+          "borderRadius": "0.25rem to 0.375rem",
+          "padding": "0.75rem 1rem",
+          "fontSize": "1rem",
+          "color": "white",
+          "focus": "Coral border glow",
+          "placeholder": "Gray with medium opacity"
+        },
+        
+        "icons": {
+          "style": "Line icons or simple glyphs",
+          "size": "1.25rem to 1.5rem standard",
+          "color": "White or coral for accent",
+          "usage": "Service indicators, social links, decorative elements"
+        },
+        
+        "dividers": {
+          "style": "Thin horizontal lines or vertical accent bars",
+          "color": "Coral or slate with low opacity",
+          "weight": "1px to 3px",
+          "usage": "Section breaks, sidebar accents"
+        }
+      },
+      
+      "visualEffects": {
+        "gradients": {
+          "hero": {
+            "type": "Radial gradient behind portrait",
+            "colors": "Coral to orange to transparent",
+            "usage": "Create depth and draw attention"
+          },
+          "overlay": {
+            "type": "Linear gradient on dark backgrounds",
+            "colors": "Navy to darker navy",
+            "usage": "Subtle depth on sections"
+          }
+        },
+        
+        "shadows": {
+          "subtle": "0 4px 6px rgba(0, 0, 0, 0.1)",
+          "elevated": "0 10px 25px rgba(0, 0, 0, 0.2)",
+          "glow": "0 0 20px rgba(255, 107, 107, 0.15)",
+          "usage": "Minimal use, primarily for elevation on cards"
+        },
+        
+        "borders": {
+          "default": "1px solid with rgba(255, 255, 255, 0.1)",
+          "accent": "2px to 3px solid coral for emphasis",
+          "usage": "Subtle containment, not heavy boxing"
+        },
+        
+        "animations": {
+          "transitions": "0.2s to 0.3s ease-in-out",
+          "hover": "Transform scale(1.02) or translateY(-4px)",
+          "fadein": "Opacity and slight translate on scroll",
+          "usage": "Subtle, performant, purposeful motion"
+        },
+        
+        "blur": {
+          "backdrop": "blur(10px) on navigation or overlays",
+          "usage": "Modern glassmorphism effect sparingly"
+        }
+      },
+      
+      "imagery": {
+        "hero": {
+          "style": "High-quality portrait photo",
+          "treatment": "Circular mask with gradient ring",
+          "position": "Right side, prominent but balanced"
+        },
+        "projects": {
+          "style": "Screenshots, mockups, or code snippets",
+          "aspect": "16:9 or similar cinematic ratio",
+          "treatment": "Rounded corners, subtle border, displayed in context"
+        },
+        "icons": {
+          "style": "Technology logos for skills (HTML, CSS, JS, etc.)",
+          "treatment": "Grayscale or muted color with opacity",
+          "arrangement": "Horizontal row or grid"
+        }
+      },
+      
+      "designPrinciples": {
+        "contrast": "High contrast dark theme with bold accent color for maximum impact and readability",
+        "clarity": "Clean, uncluttered layouts with clear hierarchy and purpose for every element",
+        "modernism": "Contemporary design trends - gradients, generous spacing, subtle animations",
+        "professionalism": "Polished, refined execution that demonstrates attention to detail",
+        "personality": "Coral accent color and asymmetric layouts inject warmth and character",
+        "performance": "Lightweight effects and optimized assets for fast loading",
+        "accessibility": "Sufficient color contrast, readable font sizes, clear interactive states",
+        "responsiveness": "Fluid layouts that adapt gracefully from mobile to desktop"
+      },
+      
+      "contentStrategy": {
+        "tone": "Confident but not arrogant, technical but approachable",
+        "hierarchy": "Lead with value proposition, support with evidence (projects, stats)",
+        "callsToAction": "Clear, prominent CTAs in coral at key decision points",
+        "storytelling": "Personal narrative in About section builds connection"
+      },
+      
+      "technicalNotes": {
+        "framework": "Can be implemented in React, vanilla HTML/CSS, or any modern framework",
+        "responsive": "Mobile-first approach, breakpoints at 640px, 768px, 1024px, 1280px",
+        "performance": "Lazy load images, optimize assets, minimize JavaScript",
+        "seo": "Semantic HTML, proper heading hierarchy, meta tags",
+        "hosting": "Static site suitable for GitHub Pages, Netlify, Vercel"
+      }
+    }
+  }
