@@ -50,6 +50,52 @@ npm run build
 
 This creates an optimized production build in the `build` folder, ready for deployment to platforms like Netlify, Vercel, or GitHub Pages.
 
+## Deployment to GitHub Pages
+
+### Quick Setup
+
+1. **Update homepage URL** in `package.json`:
+   ```json
+   "homepage": "https://YOUR_USERNAME.github.io/profile-page"
+   ```
+   Replace `YOUR_USERNAME` with your GitHub username.
+
+2. **Install dependencies** (including gh-pages):
+   ```bash
+   npm install
+   ```
+
+3. **Initialize Git** (if not already done):
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   ```
+
+4. **Connect to GitHub**:
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+5. **Deploy**:
+   ```bash
+   npm run deploy
+   ```
+
+6. **Enable GitHub Pages**:
+   - Go to your repository → Settings → Pages
+   - Select `gh-pages` branch
+   - Select `/ (root)` folder
+   - Click Save
+
+Your site will be live at `https://YOUR_USERNAME.github.io/profile-page`
+
+### Detailed Guide
+
+For detailed step-by-step instructions, see [GITHUB_PAGES_SETUP.md](./GITHUB_PAGES_SETUP.md)
+
 ## Customization
 
 ### Personal Information
