@@ -50,11 +50,11 @@ const Navigation = () => {
           </li>
           <li>
             <a 
-              href="#projects" 
-              onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}
+              href="#experience" 
+              onClick={(e) => { e.preventDefault(); scrollToSection('experience'); }}
               className="text-sm lg:text-base font-medium text-text-primary opacity-80 transition-all duration-200 hover:opacity-100 hover:text-coral relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-coral after:transition-all after:duration-300 hover:after:w-full"
             >
-              Projects
+              Experience
             </a>
           </li>
           <li>

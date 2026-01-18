@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Hero = () => {
-  const techIcons = ['HTML', 'CSS', 'JavaScript', 'Node.js', 'React', 'Git', 'GitHub'];
+  const techIcons = ['Large Language Models (LLM)', 'Artificial Intelligence (AI)', 'Vector Databases', 'Generative AI', 'Agents', 'Retrieval Augmented Generation (RAG)'];
 
   return (
     <section id="hero" className="min-h-screen bg-gradient-to-br from-navy-dark to-navy-darker flex items-center pt-20 relative">
@@ -9,10 +9,10 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
           <div className="flex flex-col gap-8">
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.1] text-text-primary">
-              Hello. <span className="block text-coral">I'm John Doe</span>
+              Hello. <span className="block text-coral">I'm Luiz H. Salazar</span>
             </h1>
             <p className="text-2xl sm:text-3xl md:text-4xl text-text-secondary font-normal">
-              Software Developer
+              Senior Software Engineer | AI Engineer | Generative AI, RAG & Agents
             </p>
             <div className="flex gap-6 flex-wrap">
               <button className="px-6 py-3 bg-gradient-to-r from-coral to-orange text-white font-semibold rounded-md transition-all duration-200 hover:scale-105 hover:shadow-lg hover:shadow-coral/30">

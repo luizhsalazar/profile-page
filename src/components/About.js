@@ -2,15 +2,14 @@ import React from 'react';
 
 const About = () => {
   const services = [
-    { icon: '🌐', title: 'Website Development' },
-    { icon: '📱', title: 'App Development' },
-    { icon: '☁️', title: 'Website Hosting' }
+    { icon: '🤖', title: 'AI Engineering' },
+    { icon: '🏗️', title: 'System Architecture' },
+    { icon: '☁️', title: 'Cloud & DevOps' }
   ];
 
   const stats = [
-    { number: '120+', label: 'Completed Projects' },
-    { number: '95%', label: 'Client satisfaction' },
-    { number: '10+', label: 'Years of experience' }
+    { number: '10+', label: 'Years of experience' },
+    { number: 'M.Sc.', label: 'Applied Computing' }
   ];
 
   return (
@@ -33,13 +32,17 @@ const About = () => {
               About me
             </h2>
             <p className="text-lg leading-relaxed text-text-secondary max-w-3xl">
-              I'm a passionate software developer with over a decade of experience creating 
-              innovative web solutions and applications. My journey in tech has been driven by 
-              a love for clean code, user-centered design, and continuous learning. I specialize 
-              in building responsive, performant applications that solve real-world problems while 
-              delivering exceptional user experiences.
+              I'm a Software Engineer with over a decade of experience developing enterprise-grade software solutions 
+              across diverse sectors. Currently at CIASC - Centro de Informática e Automação de SC, I lead initiatives 
+              in AI-driven government services for the state of Santa Catarina.
+              My expertise encompasses machine learning, supervised learning algorithms, and advanced AI systems 
+              including Retrieval Augmented Generation (RAG) architectures and Large Language Model (LLM) implementations. 
+              I hold a Master's degree in Applied Computing with a specialization in Artificial Intelligence from Univali, 
+              complemented by a Big Data specialization. My research contributions include publications on RAG evaluation 
+              methodologies, Langflow deployment strategies, and software engineering best practices. 
+              I'm proficient in software development best practices, software architecture, and cloud-native technologies (AWS, Azure, GCP).
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
               {stats.map((stat, index) => (
                 <div 
                   key={index} 
