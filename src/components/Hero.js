@@ -22,7 +22,7 @@ const Hero = () => {
                 My resume
               </button>
             </div>
-            <div className="flex flex-wrap gap-6 mt-4">
+            <div className="flex flex-wrap gap-6 mt-4 mb-8">
               {techIcons.map((tech, index) => (
                 <span 
                   key={index} 

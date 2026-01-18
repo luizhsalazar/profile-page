@@ -13,16 +13,16 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-16 md:py-24 lg:py-32 px-4 md:px-6 lg:px-12 xl:px-16 bg-navy-dark">
+    <section id="about" className="py-4 md:py-24 lg:py-32 px-4 md:px-6 lg:px-12 xl:px-16 bg-navy-dark">
       <div className="max-w-container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[250px_1fr] gap-12 lg:gap-24 items-start">
-          <div className="relative pt-6 lg:block flex justify-around">
+          <div className="relative lg:block flex flex-wrap justify-center lg:justify-start gap-4 lg:gap-0">
             {services.map((service, index) => (
-              <div key={index} className="relative flex lg:flex-row flex-col items-center gap-6 py-6 lg:py-6">
-                <div className="text-3xl w-12 h-12 flex items-center justify-center flex-shrink-0">{service.icon}</div>
-                <div className="text-base text-text-secondary font-medium lg:text-left text-center">{service.title}</div>
+              <div key={index} className="relative flex lg:flex-row flex-col items-center gap-3 lg:gap-6 py-3 lg:py-6">
+                <div className="text-2xl lg:text-3xl w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center flex-shrink-0">{service.icon}</div>
+                <div className="text-sm lg:text-base text-text-secondary font-medium lg:text-left text-center whitespace-nowrap">{service.title}</div>
                 {index < services.length - 1 && (
-                  <div className="absolute left-6 top-16 lg:block hidden w-0.5 h-full bg-gradient-to-b from-coral to-transparent opacity-50"></div>
+                  <div className="absolute left-5 lg:left-6 top-12 lg:top-16 lg:block hidden w-0.5 h-full bg-gradient-to-b from-coral to-transparent opacity-50"></div>
                 )}
               </div>
             ))}
